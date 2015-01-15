@@ -1,6 +1,8 @@
 # ean-jspm
 
-EAN is a boilerplate that provides a nice starting point for [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
+EAN is a boilerplate that provides a nice starting point for [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing full stack JS web app, with basic modules prebundled and configured. It doesn't try to go far and provide you with a lot of frameworks you might not want to use.
+
+CommonJS everywhere-don't ever repeat yourself. Need an enum on both sides of your app? Just require it... 
 ## Philosophy
 Opinionated stack perfect for building large and small angular apps
 
@@ -34,3 +36,17 @@ angular-touch and angular-gestures to make mobile experience that much better
     http://localhost:8080
     ```
     8080 is default port specified in config-dev.json
+
+### Testing
+Here I chose Mocha with Chai on both sides-karma doesn't have to be used with Jasmine. Chai has much more powerful assertions and Mocha is slightly better for instrumentating your test scenarios. To run the tests(backend, then frontend), run
+```
+npm test
+```
+or for backend tests
+```
+npm testback
+```
+or for frontend tests
+```
+karma testfront
+```
