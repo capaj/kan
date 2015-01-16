@@ -1,6 +1,6 @@
-# ean-jspm
+# ikan-jspm
 
-EAN is a boilerplate that provides a nice starting point for [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing full stack JS web app, with basic modules prebundled and configured. It doesn't try to go far and provide you with a lot of frameworks you might not want to use.
+IKAN is a boilerplate that provides a nice starting point for [Io.js](http://www.iojs.org/), [Koa](http://koajs.com/), [JSPM](http://jspm.io/) and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing full stack JS web app, with basic modules prebundled and configured. It doesn't try to go far and provide you with a lot of frameworks you might not want to use.
 
 CommonJS everywhere-don't ever repeat yourself. Need an enum on both sides of your app? Just require it... 
 ## Philosophy
