@@ -33,6 +33,8 @@ app.use(router(app));
 
 app.use(serve(__dirname + '/public/'));
 // boot
-app.listen(port);
+app.listen(port, function() {
+	console.log("listening on ", port);
+});
 
 module.exports = app;
