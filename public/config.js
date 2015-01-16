@@ -2,7 +2,9 @@ System.config({
   "paths": {
     "*": "*.js",
     "ean-jspm/*": "lib/*.js",
-    "github:*": "jspm_packages/github/*.js"
+    "github:*": "jspm_packages/github/*.js",
+    "kan/*": "lib/*.js",
+    "npm:*": "jspm_packages/npm/*.js"
   }
 });
 
@@ -14,8 +16,10 @@ System.config({
     "angular-mocks": "github:angular/bower-angular-mocks@1.3.9",
     "angular-route": "github:angular/bower-angular-route@1.3.9",
     "bootstrap": "github:twbs/bootstrap@3.3.1",
+    "css": "github:systemjs/plugin-css@0.1.0",
     "hammer.js": "github:hammerjs/hammer.js@2.0.4",
     "jquery": "github:components/jquery@2.1.3",
+    "moment": "github:moment/moment@2.9.0",
     "github:angular/bower-angular-animate@1.3.9": {
       "angular": "github:angular/bower-angular@1.3.9"
     },

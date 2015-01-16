@@ -17,7 +17,7 @@ var app = koa();
 
 // logging
 
-if ('test' != env) app.use(logger());
+if ('test' !== env) app.use(logger());
 
 // x-response-time
 
