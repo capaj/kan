@@ -1,25 +1,38 @@
+/**
+ * Module dependencies.
+ */
+var koa = require('koa');
+var serve = require('koa-static');
+var responseTime = require('koa-response-time');
+var compress = require('koa-compress');
+var logger = require('koa-logger');
+var router = require('koa-router');
+/**
+ * Environment.
+ */
 var env = process.env.NODE_ENV || 'development';
-var express = require('express');
-var app = express();
-var port = 8283;
+var port = 8080;
 
-var morgan = require('morgan');
+var app = koa();
 
-if (env === 'production') {
-	app.use(morgan('combined'));
-}
-if (env === 'development') {
-	app.use(require('connect-livereload')({
-		port: 35939
-	}));
+// logging
 
-	app.use(morgan('dev'));
-}
+if ('test' != env) app.use(logger());
 
-app.use(express.static('./public/'));
+// x-response-time
 
-app.listen(port).on('listening', function() {
-	console.log('server started in ', env, ' on port ', port);
-});
+app.use(responseTime());
+
+// compression
+
+app.use(compress());
+
+// routing
+
+app.use(router(app));
+
+app.use(serve(__dirname + '/public/'));
+// boot
+app.listen(port);
 
 module.exports = app;
