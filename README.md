@@ -19,9 +19,9 @@ angular-touch and angular-gestures to make mobile experience that much better
 * gulp - The streaming build system
 
 ## Quick start
-  The quickest way to get started with EAN is to clone the project and then:
+  The quickest way to get started with KAN is to clone the project and then:
 
-  1. Install dependencies:
+  1. Install dependencies(which installs frontend deps as well):
     
     ```
     $ npm install
