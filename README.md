@@ -1,5 +1,8 @@
 # kan
 
+# Deprecation notice:
+This boilerplate is not up to date with best practices and it would not make sense to update it anymore-it is easier to write a new one from scratch. If you need a top notch angular boilerplate, then please use https://github.com/angular-class/NG6-starter/tree/jspm
+
 IKAN is a boilerplate that provides a nice starting point for [Koa](http://koajs.com/), [AngularJS](http://angularjs.org/) and [JSPM](http://jspm.io/) based web applications. It is designed to give you quick and organized way to start developing full stack JS web app, with basic modules prebundled and configured. It doesn't try to go far and provide you with a lot of frameworks you might not want to use.
 
 CommonJS everywhere-don't ever repeat yourself. Need an enum on both sides of your app? Just require it... 
